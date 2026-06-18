@@ -4,9 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kipas Angin Premium</title>
+<title>Kipas Angin Premium CoolWind X9</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 *{
@@ -17,28 +17,27 @@ font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#f5f7fa;
+background:#f8f9fc;
 color:#333;
+line-height:1.6;
+}
+
+.hero{
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:#fff;
+padding:80px 20px;
 }
 
 .container{
-width:90%;
 max-width:1200px;
 margin:auto;
 }
 
-.hero{
-padding:100px 0;
-background:linear-gradient(135deg,#0ea5e9,#38bdf8);
-color:white;
-}
-
 .hero-content{
 display:flex;
-align-items:center;
-justify-content:space-between;
-gap:40px;
 flex-wrap:wrap;
+align-items:center;
+gap:50px;
 }
 
 .hero-text{
@@ -47,24 +46,30 @@ min-width:300px;
 }
 
 .hero-text h1{
-font-size:55px;
-line-height:1.1;
+font-size:48px;
 margin-bottom:20px;
+line-height:1.2;
 }
 
 .hero-text p{
 font-size:18px;
+opacity:.9;
 margin-bottom:25px;
 }
 
 .btn{
 display:inline-block;
+background:#22c55e;
+color:#fff;
 padding:15px 35px;
-background:white;
-color:#0ea5e9;
-font-weight:700;
-text-decoration:none;
 border-radius:50px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
 }
 
 .hero-image{
@@ -74,18 +79,18 @@ text-align:center;
 
 .hero-image img{
 max-width:100%;
-height:auto;
+width:500px;
 }
 
-section{
-padding:80px 0;
+.section{
+padding:80px 20px;
 }
 
-.title{
+.section-title{
 text-align:center;
-font-size:40px;
+font-size:36px;
 margin-bottom:50px;
-color:#0ea5e9;
+color:#0f172a;
 }
 
 .features{
@@ -94,32 +99,37 @@ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
-.feature{
-background:white;
+.feature-box{
+background:#fff;
 padding:30px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
-text-align:center;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
 }
 
-.feature h3{
+.feature-box h3{
 margin-bottom:10px;
+color:#0f172a;
 }
 
-.benefits{
-background:white;
+.product-desc{
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:18px;
 }
 
-.benefit-list{
+.specs{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:20px;
+margin-top:40px;
 }
 
-.benefit{
-background:#f7fafc;
+.spec-item{
+background:#fff;
 padding:25px;
-border-radius:12px;
+border-radius:15px;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
 }
 
 .testimonials{
@@ -129,51 +139,46 @@ gap:25px;
 }
 
 .testimonial{
-background:white;
-padding:25px;
+background:#fff;
+padding:30px;
 border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.stars{
+color:#ffc107;
+font-size:20px;
+margin-bottom:10px;
 }
 
 .price-section{
-background:#0ea5e9;
+background:#0f172a;
 color:white;
 text-align:center;
+padding:80px 20px;
 }
 
-.old-price{
-text-decoration:line-through;
-opacity:.7;
-font-size:22px;
-}
-
-.new-price{
-font-size:50px;
-font-weight:800;
-margin:10px 0;
+.price{
+font-size:60px;
+font-weight:700;
+margin:20px 0;
+color:#22c55e;
 }
 
 footer{
-background:#111;
-color:white;
+background:#020617;
+color:#fff;
+padding:30px;
 text-align:center;
-padding:25px;
 }
 
 @media(max-width:768px){
-
 .hero-text h1{
-font-size:38px;
+font-size:34px;
 }
-
-.title{
-font-size:30px;
+.price{
+font-size:42px;
 }
-
-.new-price{
-font-size:38px;
-}
-
 }
 </style>
 </head>
@@ -184,49 +189,82 @@ font-size:38px;
 <div class="hero-content">
 
 <div class="hero-text">
-<h1>KIPAS ANGIN PREMIUM HEMAT LISTRIK</h1>
+<h1>Kipas Angin Premium CoolWind X9</h1>
+<p>Solusi udara sejuk untuk rumah, kantor, dan kamar tidur. Hemat listrik, suara sangat senyap, dan dilengkapi teknologi sirkulasi udara modern.</p>
 
-<p>
-Nikmati kesejukan maksimal dengan teknologi hembusan angin lebih kuat,
-lebih senyap, dan lebih hemat energi untuk seluruh keluarga.
-</p>
-
-<a href="#pesan" class="btn">BELI SEKARANG</a>
+<a href="#order" class="btn">Pesan Sekarang</a>
 </div>
 
 <div class="hero-image">
-<img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700" alt="Kipas Angin">
+<img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80">
 </div>
 
 </div>
 </div>
 </section>
 
-<section>
+<section class="section">
 <div class="container">
 
-<h2 class="title">KEUNGGULAN PRODUK</h2>
+<h2 class="section-title">Mengapa Memilih CoolWind X9?</h2>
 
 <div class="features">
 
-<div class="feature">
+<div class="feature-box">
 <h3>💨 Angin Lebih Kencang</h3>
-<p>Teknologi baling-baling terbaru menghasilkan hembusan maksimal.</p>
+<p>Teknologi motor terbaru menghasilkan aliran udara lebih kuat dan merata ke seluruh ruangan.</p>
 </div>
 
-<div class="feature">
-<h3>🔇 Suara Lebih Senyap</h3>
-<p>Tetap nyaman digunakan saat tidur maupun bekerja.</p>
+<div class="feature-box">
+<h3>🔇 Super Senyap</h3>
+<p>Dirancang dengan sistem peredam suara sehingga nyaman digunakan saat tidur.</p>
 </div>
 
-<div class="feature">
+<div class="feature-box">
 <h3>⚡ Hemat Listrik</h3>
-<p>Konsumsi daya rendah namun performa tetap optimal.</p>
+<p>Konsumsi daya rendah sehingga tagihan listrik tetap hemat setiap bulan.</p>
 </div>
 
-<div class="feature">
-<h3>🛡️ Awet & Tahan Lama</h3>
-<p>Material premium dengan kualitas terbaik.</p>
+<div class="feature-box">
+<h3>🛡️ Awet & Berkualitas</h3>
+<p>Menggunakan material premium dengan umur pemakaian yang lebih panjang.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section" style="background:#eef2ff;">
+<div class="container">
+
+<h2 class="section-title">Deskripsi Produk</h2>
+
+<div class="product-desc">
+<p>
+CoolWind X9 merupakan kipas angin modern yang dirancang untuk memberikan kesejukan maksimal dengan konsumsi listrik yang efisien. Cocok digunakan di kamar tidur, ruang tamu, kantor, maupun area kerja. Dengan desain elegan dan teknologi terbaru, kipas ini mampu menghasilkan aliran udara yang stabil serta nyaman digunakan sepanjang hari.
+</p>
+</div>
+
+<div class="specs">
+
+<div class="spec-item">
+<h3>Daya</h3>
+<p>45 Watt Hemat Energi</p>
+</div>
+
+<div class="spec-item">
+<h3>Kecepatan</h3>
+<p>3 Mode Pengaturan Angin</p>
+</div>
+
+<div class="spec-item">
+<h3>Fitur</h3>
+<p>Timer Otomatis hingga 8 Jam</p>
+</div>
+
+<div class="spec-item">
+<h3>Material</h3>
+<p>ABS Premium Berkualitas Tinggi</p>
 </div>
 
 </div>
@@ -234,54 +272,35 @@ lebih senyap, dan lebih hemat energi untuk seluruh keluarga.
 </div>
 </section>
 
-<section class="benefits">
+<section class="section">
 <div class="container">
 
-<h2 class="title">KENAPA HARUS MEMILIH KAMI?</h2>
-
-<div class="benefit-list">
-
-<div class="benefit">✅ Produk Original Bergaransi</div>
-<div class="benefit">✅ Pengiriman Cepat Seluruh Indonesia</div>
-<div class="benefit">✅ Ribuan Pelanggan Puas</div>
-<div class="benefit">✅ Bisa Bayar COD</div>
-<div class="benefit">✅ Customer Service Responsif</div>
-<div class="benefit">✅ Garansi Penggantian Produk</div>
-
-</div>
-
-</div>
-</section>
-
-<section>
-<div class="container">
-
-<h2 class="title">TESTIMONI PELANGGAN</h2>
+<h2 class="section-title">Review Pengguna</h2>
 
 <div class="testimonials">
 
 <div class="testimonial">
-⭐⭐⭐⭐⭐
-<br><br>
-"Kipasnya sangat kencang dan tidak berisik saat malam hari."
-<br><br>
-<b>Rina - Jakarta</b>
+<div class="stars">★★★★★</div>
+<p>
+"Kipasnya sangat dingin dan tidak berisik. Dipakai tidur malam sangat nyaman. Pengiriman juga cepat."
+</p>
+<strong>- Andi, Jakarta</strong>
 </div>
 
 <div class="testimonial">
-⭐⭐⭐⭐⭐
-<br><br>
-"Hemat listrik dan kualitasnya jauh di atas ekspektasi."
-<br><br>
-<b>Dedi - Bandung</b>
+<div class="stars">★★★★★</div>
+<p>
+"Saya beli untuk kantor dan hasilnya memuaskan. Anginnya kuat tetapi tetap hemat listrik."
+</p>
+<strong>- Rina, Surabaya</strong>
 </div>
 
 <div class="testimonial">
-⭐⭐⭐⭐⭐
-<br><br>
-"Pengiriman cepat, barang sampai dengan aman."
-<br><br>
-<b>Fajar - Surabaya</b>
+<div class="stars">★★★★★</div>
+<p>
+"Desainnya modern dan elegan. Kualitas jauh di atas ekspektasi untuk harga segini."
+</p>
+<strong>- Budi, Bandung</strong>
 </div>
 
 </div>
@@ -289,28 +308,24 @@ lebih senyap, dan lebih hemat energi untuk seluruh keluarga.
 </div>
 </section>
 
-<section class="price-section" id="pesan">
-<div class="container">
+<section class="price-section" id="order">
 
-<h2>PROMO SPESIAL HARI INI</h2>
+<h2>Promo Spesial Hari Ini</h2>
 
-<div class="old-price">Rp 499.000</div>
+<div class="price">Rp299.000</div>
 
-<div class="new-price">Rp 299.000</div>
-
-<p>Stok Terbatas! Dapatkan Diskon Hingga 40%</p>
+<p>Harga Normal Rp499.000</p>
 
 <br>
 
 <a href="https://wa.me/6281234567890" class="btn">
-PESAN VIA WHATSAPP
+Pesan Via WhatsApp
 </a>
 
-</div>
 </section>
 
 <footer>
-© 2026 Kipas Angin Premium Indonesia
+© 2026 CoolWind X9 Premium Fan. All Rights Reserved.
 </footer>
 
 </body>
